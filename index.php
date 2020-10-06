@@ -6,7 +6,7 @@
   </head>
   <body>
     <?php
-      $content = [
+      $faq = [
         [
         "question" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
         "answer" => "La recente decisione della Corte di giustizia dell'Unione europea ha profonde
@@ -29,8 +29,17 @@
       ]
     ?>
 
+
+    <?php
+      for ($i=0; $i<contents($faq); $i++)
+    { ?>
+      <!-- Contenuto pagina -->
     <p>
-      
+      <?php echo $faq[$i]["question"] ?>
     </p>
+
+    <?php
+
+    } ?>
   </body>
 </html>
