@@ -27,28 +27,36 @@
   <head>
     <meta charset="utf-8">
     <title>Google Faq</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
-  <style>
-    .list {
-      margin: auto;
-      width: 1000px;
-      list-style: none;
-      text-align: left;
-      padding: 1% 0;
-    }
-
-    .list_bold {
-      margin: auto;
-      width: 1000px;
-      list-style: none;
-      text-align: left;
-      padding: 1% 0;
-      font-weight: bold;
-      font-size: 24px;
-      color: #333333;
-    }
-  </style>
   <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="top">
+          <div class="logo fl_left">
+            <img id="google_logo" src="img/googlelogo.png" alt="" />
+          </div>
+          <div class="page_title fl_left">
+            <h2>Privacy e termini</h2>
+          </div>
+          </div>
+          <div class="bottom">
+            <div class="menu">
+              <ul>
+                <li>Introduzione</li>
+                <li>Norme sulla privacy</li>
+                <li>Termini di servizio</li>
+                <li>Tecnologie</li>
+                <li>Domande frequenti</li>
+              </ul>
+            </div>
+            <div class="user">
+              <img id="" src="" alt="" />
+              <output></output>
+            </div>
+          </div>
+      </nav>
+    </header>
 
     <ul>
       <?php
