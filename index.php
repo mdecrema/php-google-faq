@@ -28,9 +28,11 @@
     <meta charset="utf-8">
     <title>Google Faq</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
+      <!-- Navigation bar -->
       <nav class="nav-bar">
         <div class="top">
           <div class="logo fl_left">
@@ -47,7 +49,7 @@
                 <li>Norme sulla privacy</li>
                 <li>Termini di servizio</li>
                 <li>Tecnologie</li>
-                <li>Domande frequenti</li>
+                <li class="active">Domande frequenti</li>
               </ul>
             </div>
             <div class="user">
@@ -56,20 +58,26 @@
             </div>
           </div>
       </nav>
+      <!-- /Navigation bar -->
     </header>
-
-    <ul>
-      <?php
-      $lista = "list";
-      $bold = "bold";
-      foreach ($faq as $key) {
-     ?>
-        <li class="<?php echo $list_bold ?>"><?php echo $key["question"]; ?></li>
-        <li class="<?php echo $list ?>"><?php echo $key["answer"]; ?></li>
-      <?php
-    }
-       ?>
-    </ul>
+    <main >
+      <!-- FAQ -->
+      <div class="faq">
+        <ul>
+          <?php
+          $lista = "list";
+          $bold = "bold";
+          foreach ($faq as $key) {
+          ?>
+            <li class="<?php echo $list_bold ?>"><?php echo $key["question"]; ?></li>
+            <li class="<?php echo $list ?>"><?php echo $key["answer"]; ?></li>
+          <?php
+          }
+           ?>
+        </ul>
+      </div>
+      <!-- /FAQ -->
+    </main>
 
   </body>
 </html>
