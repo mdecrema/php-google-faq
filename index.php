@@ -28,14 +28,30 @@
     <meta charset="utf-8">
     <title>Google Faq</title>
   </head>
+  <style>
+    .list {
+      list-style: none;
+      text-align: center;
+    }
+
+    .bold {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  </style>
   <body>
 
     <ul>
       <?php
-        foreach ($faq as $key) {
-          echo "<li>".$key["question"]."</li><li>".$key["answer"]."</li>";
-
-      } ?>
+      foreach ($faq as $key) {
+    //  $lista = "list";
+      //$bold = "bold";
+     ?>
+        <li><?php echo $key["question"]; ?></li>
+        <li><?php echo $key["answer"]; ?></li>
+      <?php
+    }
+       ?>
     </ul>
 
   </body>
