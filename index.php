@@ -30,25 +30,34 @@
   </head>
   <style>
     .list {
+      margin: auto;
+      width: 1000px;
       list-style: none;
-      text-align: center;
+      text-align: left;
+      padding: 1% 0;
     }
 
-    .bold {
+    .list_bold {
+      margin: auto;
+      width: 1000px;
+      list-style: none;
+      text-align: left;
+      padding: 1% 0;
       font-weight: bold;
       font-size: 24px;
+      color: #333333;
     }
   </style>
   <body>
 
     <ul>
       <?php
+      $lista = "list";
+      $bold = "bold";
       foreach ($faq as $key) {
-    //  $lista = "list";
-      //$bold = "bold";
      ?>
-        <li><?php echo $key["question"]; ?></li>
-        <li><?php echo $key["answer"]; ?></li>
+        <li class="<?php echo $list_bold ?>"><?php echo $key["question"]; ?></li>
+        <li class="<?php echo $list ?>"><?php echo $key["answer"]; ?></li>
       <?php
     }
        ?>
