@@ -30,11 +30,13 @@
   </head>
   <body>
 
-    <?php
-      foreach ($faq as $key) {
-        echo "<li>".$key["question"]."</li>";
+    <ul>
+      <?php
+        foreach ($faq as $key) {
+          echo "<li>".$key["question"]."</li><li>".$key["answer"]."</li>";
 
-    } ?>
+      } ?>
+    </ul>
 
   </body>
 </html>
